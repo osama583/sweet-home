@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="sweet.css">
+</head>
+<body>
+    <main>
+    <section>
+    <header>
+        <div class="added-items-page">
+            <label for="in-out" class="in"><svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#000000"><path d="M647-440H160v-80h487L423-744l57-56 320 320-320 320-57-56 224-224Z"/></svg></label>
+            <div id="added-items-con">
+        <!--------------------------devider between items --------------------------------->
+            <div class="added-items">
+                <img src="148964.png" alt="" class="img-product">
+                <p>*<span>1</span> name of item</p> 
+
+                <div class="count-items-indi" id="add">
+                    <svg xmlns="http://www.w3.org/2000/svg" height="20px" viewBox="0 -960 960 960" width="20px" fill="#000000"><path d="M444-444H240v-72h204v-204h72v204h204v72H516v204h-72v-204Z"/></svg>
+                   <div class="count-items-indi" id="min">
+                    1
+                   </div>
+                   <svg xmlns="http://www.w3.org/2000/svg" height="20px" viewBox="0 -960 960 960" width="20px" fill="#000000"><path d="M232-444v-72h496v72H232Z"/></svg>
+                </div>
+
+               </div>
+               <div class="added-items">
+                <img src="148964.png" alt="" class="img-product">
+                <p>*<span>1</span> name of item</p> 
+
+                <div class="count-items-indi">
+                    <svg  id="add" xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#000000"><path d="M444-444H240v-72h204v-204h72v204h204v72H516v204h-72v-204Z"/></svg>
+                   <div class="number-in-item">
+                    1
+                   </div>
+                   <svg  id="min" xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#000000"><path d="M232-444v-72h496v72H232Z"/></svg>
+                </div>
+
+               </div>
+               <!----------------------------------------------------------->
+            </div>
+        </div>
+        
+       <h1 class="title">SWEET HOME</h1>
+        <div class="in-out-con">
+        <input type="checkbox" id="in-out">
+        <label for="in-out" class="in"><img src="148964.png" alt="" class="img"></label>
+        <div id="numberOfItems"><span id="innerNumberOfItems"></p></span>
+        </div>
+    </header>
+    </section>
+    <section class="web-body" id="web-body">
+        <div class="card">
+            <h4>Name</h4>
+            <img src="148964.png" class="img-product" alt="">
+            <p> </p>
+            <p>description</p>
+            <button class="button">Buy</button>
+        </div>
+        <div class="card">
+            <h4>Name</h4>
+            <img src="148964.png" class="img-product" alt="">
+            <p> </p>
+            <p>description</p>
+            <button class="button">Buy</button>
+        </div>
+        <div class="card">
+            <h4>Name</h4>
+            <img src="148964.png" class="img-product" alt="">
+            <p> </p>
+            <p>description</p>
+            <button class="button">Buy</button>
+        </div>
+        <div class="card">
+            <h4>Name</h4>
+            <img src="148964.png" class="img-product" alt="">
+            <p> </p>
+            <p>description</p>
+            <button class="button">Buy</button>
+        </div>
+        <div class="card">
+            <h4>Name</h4>
+            <img src="148964.png" class="img-product" alt="">
+            <p> </p>
+            <p>description</p>
+            <button class="button">Buy</button>
+        </div>
+        <div class="card">
+            <h4>Name</h4>
+            <img src="148964.png" class="img-product" alt="">
+            <p> </p>
+            <p>description</p>
+            <button class="button">Buy</button>
+        </div>
+    </section>
+    <script>
+        const cardsContainer=document.getElementById("web-body")
+
+
+        const product=[
+    {
+    id:1,
+    name:"adane tea",
+    img:"148964.png",
+    price: 0.99,
+    category:"drink",
+    },
+    {
+    id:2,
+    name:"fatera",
+    img:"148964.png",
+    price: 0.99,
+    category:"bie",
+    },
+  {
+    id: 3,
+    name: "Pumpkin Cupcake",
+    img:"148964.png",
+    price: 3.99,
+    category: "Cupcake",
+  },
+  {
+    id: 4,
+    name: "Chocolate Cupcake",
+    img:"148964.png",
+    price: 5.99,
+    category: "Cupcake",
+  },
+  {
+    id: 5,
+    name: "Chocolate Pretzels (4 Pack)",
+    img:"148964.png",
+    price: 10.99,
+    category: "Pretzel",
+  },
+  {
+    id: 6,
+    name: "Strawberry Ice Cream",
+    img:"148964.png",
+    price: 2.99,
+    category: "Ice Cream",
+  },
+  {
+    id: 7,
+    name: "Chocolate Macarons (4 Pack)",
+    img:"148964.png",
+    price: 9.99,
+    category: "Macaron",
+  },
+  {
+    id: 8,
+    name: "Strawberry Pretzel",
+    img:"148964.png",
+    price: 4.99,
+    category: "Pretzel",
+  },
+  {
+    id: 9,
+    name: "Butter Pecan Ice Cream",
+    img:"148964.png",
+    price: 2.99,
+    category: "Ice Cream",
+  },
+  {
+    id: 10,
+    name: "Rocky Road Ice Cream",
+    img:"148964.png",
+    price: 2.99,
+    category: "Ice Cream",
+  },
+  {
+    id: 11,
+    name: "Vanilla Macarons (5 Pack)",
+    img:"148964.png",
+    price: 11.99,
+    category: "Macaron",
+  },
+];
+
+product.forEach(({ name, id, price, category,img })=>{
+       
+    cardsContainer.innerHTML=`<div class="card">
+            <h4>${name}</h4>
+            <img src="${img}" class="img-product" alt="">
+            <p>{category}</p>
+            <p>${price}</p>
+            <button class="button">Buy</button>
+        </div>`
+
+    
+})
+
+    </script>
+    </main>
+</body>
+</html>

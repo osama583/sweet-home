@@ -1,0 +1,335 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="sweet.css">
+</head>
+<body>
+    <main>
+      
+        <input type="checkbox" id="in-out" hidden />
+        <div class="added-items-page">
+            <label for="in-out" class="in">
+                <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#000000">
+                    <path d="M647-440H160v-80h487L423-744l57-56 320 320-320 320-57-56 224-224Z"/>
+                </svg>
+            </label>
+            <div id="added-items-con">
+                <hr class="line">   
+                <div id="addingCardCon">
+
+                </div>
+                <!--<div id="payment-con">
+                  <div id="total-con"> <p>total: <span id="total">0</span></p></div>
+                  <div id="taxt-con"> <p>total: <span id="taxt-con">0</span></p></div>
+
+                </div>-->
+            </div>
+        </div>
+        <section>
+        <header>
+          <div class="social-media-con">
+            <div class="social-media icon-chape insta-hover"><svg class="img-of-social-media insta" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+              viewBox="0 0 56.7 56.7" enable-background="new 0 0 56.7 56.7" xml:space="preserve">
+           <g>
+             <path d="M28.2,16.7c-7,0-12.8,5.7-12.8,12.8s5.7,12.8,12.8,12.8S41,36.5,41,29.5S35.2,16.7,28.2,16.7z M28.2,37.7
+               c-4.5,0-8.2-3.7-8.2-8.2s3.7-8.2,8.2-8.2s8.2,3.7,8.2,8.2S32.7,37.7,28.2,37.7z"/>
+             <circle cx="41.5" cy="16.4" r="2.9"/>
+             <path d="M49,8.9c-2.6-2.7-6.3-4.1-10.5-4.1H17.9c-8.7,0-14.5,5.8-14.5,14.5v20.5c0,4.3,1.4,8,4.2,10.7c2.7,2.6,6.3,3.9,10.4,3.9
+               h20.4c4.3,0,7.9-1.4,10.5-3.9c2.7-2.6,4.1-6.3,4.1-10.6V19.3C53,15.1,51.6,11.5,49,8.9z M48.6,39.9c0,3.1-1.1,5.6-2.9,7.3
+               s-4.3,2.6-7.3,2.6H18c-3,0-5.5-0.9-7.3-2.6C8.9,45.4,8,42.9,8,39.8V19.3c0-3,0.9-5.5,2.7-7.3c1.7-1.7,4.3-2.6,7.3-2.6h20.6
+               c3,0,5.5,0.9,7.3,2.7c1.7,1.8,2.7,4.3,2.7,7.2V39.9L48.6,39.9z"/>
+           </g>
+           </svg></div>
+            <div class="social-media icon-chape facebook-hover"><?xml version="1.0" ?><svg class="img-of-social-media facebook" fill="none" height="17" viewBox="0 0 17 17" width="17" xmlns="http://www.w3.org/2000/svg"><path d="M14.1762 0.823608H2.68022C2.08296 0.823608 1.51015 1.06087 1.08782 1.4832C0.665486 1.90554 0.428223 2.47834 0.428223 3.07561V14.5716C0.428223 15.1689 0.665486 15.7417 1.08782 16.164C1.51015 16.5863 2.08296 16.8236 2.68022 16.8236H7.91222V10.9836H5.93422V8.70561H7.91222V7.02761C7.91222 6.07661 8.17522 5.33761 8.70122 4.81261C9.22722 4.28661 9.94022 4.02261 10.8412 4.02261C11.7432 4.02261 12.3272 4.05761 12.5942 4.12361V6.15161H11.3922C10.9582 6.15161 10.6622 6.24361 10.5032 6.42761C10.3452 6.61061 10.2662 6.88661 10.2662 7.25361V8.70561H12.5192L12.2192 10.9836H10.2662V16.8236H14.1762C14.7735 16.8236 15.3463 16.5863 15.7686 16.164C16.191 15.7417 16.4282 15.1689 16.4282 14.5716V3.07561C16.4282 2.47834 16.191 1.90554 15.7686 1.4832C15.3463 1.06087 14.7735 0.823608 14.1762 0.823608Z" fill="black"/></svg></div>
+            <div class="social-media icon-chape x-hover"><?xml version="1.0" ?><!DOCTYPE svg   PUBLIC '-//W3C//DTD SVG 1.1//EN'  'http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd'><svg class="img-of-social-media" height="100%" style="fill-rule:evenodd;clip-rule:evenodd;stroke-linejoin:round;stroke-miterlimit:2;" version="1.1" viewBox="0 0 512 512" width="100%" xml:space="preserve" xmlns="http://www.w3.org/2000/svg" xmlns:serif="http://www.serif.com/" xmlns:xlink="http://www.w3.org/1999/xlink"><path d="M161.014,464.013c193.208,0 298.885,-160.071 298.885,-298.885c0,-4.546 0,-9.072 -0.307,-13.578c20.558,-14.871 38.305,-33.282 52.408,-54.374c-19.171,8.495 -39.51,14.065 -60.334,16.527c21.924,-13.124 38.343,-33.782 46.182,-58.102c-20.619,12.235 -43.18,20.859 -66.703,25.498c-19.862,-21.121 -47.602,-33.112 -76.593,-33.112c-57.682,0 -105.145,47.464 -105.145,105.144c0,8.002 0.914,15.979 2.722,23.773c-84.418,-4.231 -163.18,-44.161 -216.494,-109.752c-27.724,47.726 -13.379,109.576 32.522,140.226c-16.715,-0.495 -33.071,-5.005 -47.677,-13.148l0,1.331c0.014,49.814 35.447,93.111 84.275,102.974c-15.464,4.217 -31.693,4.833 -47.431,1.802c13.727,42.685 53.311,72.108 98.14,72.95c-37.19,29.227 -83.157,45.103 -130.458,45.056c-8.358,-0.016 -16.708,-0.522 -25.006,-1.516c48.034,30.825 103.94,47.18 161.014,47.104" style="fill-rule:nonzero;"/></svg></div>
+          </div>
+          <div class="title-con">
+            <h1 class="title">SWEET HOME</h1>
+          </div>
+            <div class="in-out-con">
+                <!--the red doit that shows the number that u added -->
+                <div class="icon-con icon-chape">
+                  <label for="in-out" class="in">
+                    <img src="148964.png" alt="" class="img icon">
+                  </label>
+                <div id="numberOfItems">
+                    <span id="innerNumberOfItems"></span>
+                </div>
+              </div>
+                <!---->
+            </div>
+        </header>
+    </section>
+        <!--cards should be added in js using objects in web-body section-->
+        <section class="web-body" id="web-body">
+        </section>
+       
+    </main>
+    <script>
+        const cardsContainer=document.getElementById("web-body")
+
+
+        const product=[
+    {
+    id:1,
+    name: "Vanilla Macarons (5 Pack)",
+    img:"eggnog-macarons-thumbnail-removebg-preview.png",
+    price: 6.99,
+    category: "Macaron",
+    },
+    {
+    id:2,
+    name: "Chocolate Macarons (4 Pack)",
+    img:"chocolate-macaron-recipe-31-removebg-preview.png",
+    price: 9.99,
+    category: "Macaron",
+    },
+  {
+    id: 3,
+    name: "Pumpkin Cupcake",
+    img:"pumpkin-cupcakes-11-removebg-preview.png",
+    price: 3.99,
+    category: "Cupcake",
+  },
+  {
+    id: 4,
+    name: "Chocolate Cupcake",
+    img:"360_F_602574468_Mrlulwrno5eVsWSMa2PPJ0GNsB21cGB6-removebg-preview.png",
+    price: 5.99,
+    category: "Cupcake",
+  },
+  {
+    id: 5,
+    name: "Chocolate Pretzels (4 Pack)",
+    img:"Milk_Chocolate_Pretzals-48826__68532-removebg-preview.png",
+    price: 10.99,
+    category: "Pretzel",
+  },
+  {
+    id: 6,
+    name: "Strawberry Ice Cream",
+    img:"strawberry.webp",
+    price: 2.99,
+    category: "Ice Cream",
+  },
+  {
+    id: 7,
+    name:"fatera",
+    img:"hq720-removebg-preview.png",
+    price: 0.99,
+    category:"bie",
+  },
+  {
+    id: 8,
+    name: "Strawberry Pretzel",
+    img:"Strawberry-Pretzel-Cups_LowRes-024-removebg-preview.png",
+    price: 4.99,
+    category: "Pretzel",
+  },
+  {
+    id: 9,
+    name: "Butter Pecan Ice Cream",
+    img:"butter-pecan.webp",
+    price: 2.99,
+    category: "Ice Cream",
+  },
+  {
+    id: 10,
+    name: "Rocky Road Ice Cream",
+    img:"Dairy-Free-Rocky-Road-Ice-Cream_SQ-1-removebg-preview.png",
+    price: 2.99,
+    category: "Ice Cream",
+  },
+  {
+    id: 11,
+    name:"adane tea",
+    img:"download__1_-removebg-preview.png",
+    price: 0.99,
+    category:"drink",
+  },
+  {
+    id: 12,
+    name: "Espresso",
+    img:"Hot_Espresso_Coffee_in_a_transparent_glass_cup-removebg-preview.png",
+    price: 3.99,
+    category: "drinks",
+  },
+  {
+    id: 13,
+    name: "Ice americano",
+    img:"Sub-1-removebg-preview.png",
+    price: 3.50,
+    category: "drinks",
+  },
+ 
+  {
+    id: 14,
+    name: "Frappe",
+    img:"almond_chocolate-removebg-preview.png",
+    price: 5.99,
+    category: "drinks",
+  },
+];
+let random;
+product.forEach(({ name, id, price, category,img })=>{
+  
+    cardsContainer.innerHTML+=`<div class="card" id="${category}">
+
+            <div class="img-con" id=${id}><img src="${img}" class="img-product" alt=""></div>
+            <h4>${name}</h4>
+            <p class="price">$${price}</p>
+            <button class="button" id="${id}">Buy</button>
+        </div>`
+})
+//change the color of cards dependeds on the imgs id
+const team= Array.from(document.getElementsByClassName("img-con"));
+team.forEach(element => {
+  if (Number(element.id) % 2 === 0) { // convert id to a number
+    element.style.backgroundColor = "palevioletred";
+  }
+  else{
+    element.style.backgroundColor = "rgb(113, 82, 223)";
+  }
+});
+
+
+class myOrder {
+  constructor() {
+    this.Items = [];
+    this.total = 0;
+    this.TextRate = 0.15;
+  }
+
+  additem(id, product) {
+    const item = product.find((product) => product.id === id);
+    if (!item) return;
+
+    const { name, price, img } = item;
+    this.Items.push(item);
+
+    // Count items per product
+    const totalNumberPerProduct = {};
+    this.Items.forEach((item) => {
+      totalNumberPerProduct[item.id] = (totalNumberPerProduct[item.id] || 0) + 1;
+      console.log(totalNumberPerProduct)
+    });
+    const currentProductCount = totalNumberPerProduct[item.id];
+
+    // Update DOM elements
+    const numberOfItems = document.getElementById("numberOfItems");
+    const innerNumberOfItems = document.getElementById("innerNumberOfItems");
+    const addingCardCon = document.getElementById("addingCardCon");
+    
+    // Set red dot background if items exist
+    if (this.Items.length > 0) {
+      numberOfItems.style.backgroundColor = "rgba(220, 13, 13, 1)";
+    }
+
+    if (this.Items.length > 9) {
+      innerNumberOfItems.style.right = "-1px";
+    }
+    if (this.Items.length > 99) {
+      innerNumberOfItems.style.fontSize = "12px";
+      innerNumberOfItems.style.right = "0 ";
+    }
+
+
+    
+    innerNumberOfItems.innerText = this.Items.length;
+
+    // If item already exists, update count
+    let countElement = document.getElementById(`count${id}`);
+    if (countElement) {
+      countElement.innerHTML = currentProductCount;
+    } else {
+      // Add new item to cart UI
+      addingCardCon.innerHTML += `
+        <div class="added-items" id="item-${id}">
+          <img src="${img}" alt="" class="img-product-in-added-items">
+          <div>
+          <p>${name}</p>
+          <p class="price">$${price}</p>
+          </div>
+          <div class="count-items-indi">
+            <svg class="hover add" id="add-${id}" xmlns="http://www.w3.org/2000/svg" height="20px" viewBox="0 -960 960 960" width="20px" fill="#000000">
+              <path d="M444-444H240v-72h204v-204h72v204h204v72H516v204h-72v-204Z"/>
+            </svg>
+            <div class="count" id="count${id}">${currentProductCount}</div>
+            <svg class="hover min" id="min-${id}" xmlns="http://www.w3.org/2000/svg" height="20px" viewBox="0 -960 960 960" width="20px" fill="#000000">
+              <path d="M232-444v-72h496v72H232Z"/>
+            </svg>
+          </div>
+        </div>`;
+    }
+  }
+
+  removeItem(id) {
+    console.log("Items before removing:", this.Items);
+    
+    // Find the index and remove one instance of the item
+    const index = this.Items.findIndex((item) => item.id === id);
+    if (index !== -1) {
+      this.Items.splice(index, 1);
+    }
+
+    // Update elements
+    const countElement = document.getElementById(`count${id}`);
+    if (countElement) {
+      const currentCount = parseInt(countElement.innerHTML);
+      if (currentCount > 1) {
+        countElement.innerHTML = currentCount - 1;
+      } else {
+        // Remove item from docoment if count is 0
+        const itemElement = document.getElementById(`item-${id}`);
+        if (itemElement) itemElement.remove();
+      }
+    }
+
+    // Update the cart count
+    const innerNumberOfItems = document.getElementById("innerNumberOfItems");
+    innerNumberOfItems.innerText = this.Items.length;
+    if(!this.Items.length){
+      numberOfItems.style.backgroundColor = "rgba(220, 13, 13, 0)";
+      innerNumberOfItems.innerText=" "
+
+    }
+
+    console.log("Items after removing:", this.Items);
+  }
+}
+
+// Create cart instance
+const cart = new myOrder();
+
+// Event delegation for dynamically added buttons
+document.getElementById("addingCardCon").addEventListener("click", (event) => {
+  const target = event.target;
+
+  if (target.classList.contains("min")) {
+    // Extract ID from the button's ID, e.g., "min-1" becomes 1
+    const id = Number(target.id.split("-")[1]);
+    cart.removeItem(id);
+  } else if (target.classList.contains("add")) {
+    const id = Number(target.id.split("-")[1]);
+    cart.additem(id, product);
+  }
+});
+
+// Event listeners for initial product buy buttons
+const buyButtons = document.getElementsByClassName("button");
+[...buyButtons].forEach((button) => {
+  button.addEventListener("click", (event) => {
+    cart.additem(Number(event.target.id), product);
+
+});
+});
+
+
+
+    
+    </script>
+</body>
+</html> 
